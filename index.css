@@ -1,15 +1,88 @@
- 
 .logo { /* class*/
-    display: inline;
-    
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
 }
 
 #logo{ /*id vom logo*/
-   width: 25px;
-   height: 25px;
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+    border-radius: 50%;
+    object-fit: cover;
 }
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+body {
+    padding-top: 80px; /* Add padding to prevent content from hiding under fixed header */
+}
+
 .header {
-    display: inline;
-    margin-left: 150px;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.header a {
+    color: black;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+.header a:hover {
+    text-decoration: underline;
+}
+
+.quran-image img {
+    transition: transform 0.3s ease;
+}
+
+.quran-image img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+}
+
+.footer-links {
+    margin-top: 10px;
+}
+
+.footer-links a {
+    color: black;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.logo span {
+    margin-left: 10px;
 }
 
