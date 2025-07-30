@@ -1,0 +1,15 @@
+ 
+.logo { /* class*/
+    display: inline;
+    
+}
+
+#logo{ /*id vom logo*/
+   width: 25px;
+   height: 25px;
+}
+.header {
+    display: inline;
+    margin-left: 150px;
+}
+
