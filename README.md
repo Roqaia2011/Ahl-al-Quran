@@ -1,6 +1,6 @@
 # Ahl-al-Quran
 What to do:<br>
-1.Download a cloan of the files on your device
+1.Cloan the repositorie on your device
 <br>
 2. Pull bevor editing to make shure you have the newest version <br>
 3. Edit your websites <br>
