@@ -2,8 +2,7 @@
 What to do:<br>
 1. Create an accaut
 2. Send me the username or email so i can add you to edit the repositorie
-3.Cloan the repositorie on your device
-<br>
+3. Cloan the repositorie on your device
 4. Pull bevor editing to make shure you have the newest version <br>
 5. Edit your websites <br>
 6. Commit (so it's saved on your device) <br>
