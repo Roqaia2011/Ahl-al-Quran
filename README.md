@@ -7,3 +7,4 @@ What to do:<br>
 5. Edit your websites <br>
 6. Commit (so it's saved on your device) <br>
 7. push in the main branch (so it's saved on the server and the otheres can see to)
+8. finish your part bevor 30.8.2025
