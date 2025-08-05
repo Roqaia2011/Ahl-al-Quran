@@ -1,19 +1,17 @@
-.logo { /* class*/
-    display: flex;
-    align-items: center;
-    font-weight: bold;
-    padding: 20px;
-    text-align: center;
-    text-decoration: none;
-    color: black;
+/* Color Variables */
+:root {
+    --primary-orange: #ff8c42;
+    --light-orange: #ffd5c2;
+    --warm-yellow: #f9c784;
+    --soft-red: #ff6b6b;
+    --text-dark: #2d3436;
 }
 
-#logo{ /*id vom logo*/
-    width: 35px;
-    height: 35px;
-    margin-right: 10px;
-    border-radius: 50%;
-    object-fit: cover;
+body {
+    padding-top: 80px;
+    background-color: #fff9f2;
+    color: var(--text-dark);
+    font-family: Arial, sans-serif;
 }
 
 header {
@@ -27,62 +25,273 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 15px rgba(255, 140, 66, 0.1);
+    border-bottom: 3px solid var(--primary-orange);
 }
 
-body {
-    padding-top: 80px; /* Add padding to prevent content from hiding under fixed header */
+.logo {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: var(--primary-orange);
+}
+
+#logo {
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--primary-orange);
 }
 
 .header {
     display: flex;
     justify-content: center;
     padding: 20px;
-    text-align: center;
 }
 
 .header a {
-    color: black;
+    color: var(--text-dark);
     text-decoration: none;
-    margin: 0 10px;
+    margin: 0 15px;
     font-weight: bold;
+    padding: 5px 15px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
 }
 
 .header a:hover {
-    text-decoration: underline;
+    background-color: var(--light-orange);
+    text-decoration: none;
+    color: var(--primary-orange);
+}
+
+/* Language block styles */
+.lang-block {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(135deg, var(--warm-yellow) 0%, var(--light-orange) 100%);
+    margin: 20px 0;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(255, 140, 66, 0.1);
+}
+
+.german, .arabic {
+    margin: 20px 0;
+}
+
+.german h1, .arabic h1 {
+    color: var(--text-dark);
+    margin-bottom: 10px;
+}
+
+.german p, .arabic p {
+    color: var(--text-dark);
+    opacity: 0.9;
+}
+
+.arabic {
+    font-family: 'Traditional Arabic', serif;
+    font-size: 1.2em;
+}
+
+/* Info boxes styles */
+.info-boxes {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.info-box {
+    flex: 1;
+    min-width: 300px;
+    max-width: 350px;
+    padding: 30px;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 0 4px 15px rgba(255, 140, 66, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+    border: 1px solid var(--light-orange);
+}
+
+.info-box:hover {
+    transform: translateY(-5px);
+    border-color: var(--primary-orange);
+}
+
+.info-box .icon {
+    font-size: 2.5em;
+    color: var(--primary-orange);
+    margin-bottom: 20px;
+}
+
+.info-box h2 {
+    margin-bottom: 15px;
+    color: var(--text-dark);
+}
+
+.info-box p {
+    color: var(--text-dark);
+    opacity: 0.8;
+    line-height: 1.6;
+}
+
+/* Content container layout */
+.content-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.quran-image {
+    text-align: center;
+    margin-bottom: 40px;
 }
 
 .quran-image img {
-    transition: transform 0.3s ease;
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(255, 140, 66, 0.15);
+    border: 3px solid var(--warm-yellow);
 }
 
 .quran-image img:hover {
-    transform: scale(1.1);
+    transform: scale(1.02);
     cursor: pointer;
+    transition: transform 0.3s ease;
 }
 
-footer {
-    padding: 20px;
+/* Islamic Symbol Styles */
+.islamic-symbol {
     text-align: center;
-    color: black;
+    margin: 20px 0;
+}
+
+.moon-star {
+    position: relative;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+}
+
+.crescent {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    box-shadow: 15px 15px 0 0 var(--primary-orange);
+    transform: rotate(-45deg);
+}
+
+.star {
+    position: absolute;
+    color: var(--primary-orange);
+    font-size: 35px;
+    right: 10px;
+    top: 25px;
+}
+
+/* Quran Section Styles */
+.quran-section {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 40px;
+    background: linear-gradient(135deg, var(--warm-yellow) 0%, white 100%);
+    border-radius: 15px;
+    margin: 40px 0;
+    box-shadow: 0 4px 15px rgba(255, 140, 66, 0.1);
+}
+
+.quran-content {
+    flex: 1;
+}
+
+.quran-title {
+    margin-bottom: 20px;
+}
+
+.quran-title h2 {
+    color: var(--text-dark);
+    margin: 10px 0;
+}
+
+.arabic-title {
+    font-family: 'Traditional Arabic', serif;
+    font-size: 1.8em;
+}
+
+.quran-description p {
+    color: var(--text-dark);
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+.arabic-text {
+    font-family: 'Traditional Arabic', serif;
+    font-size: 1.4em;
+    text-align: right;
+}
+
+.quran-image {
+    flex: 1;
+    text-align: center;
+}
+
+.quran-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(255, 140, 66, 0.15);
+    border: 3px solid var(--warm-yellow);
+    transition: transform 0.3s ease;
+}
+
+/* Media Query for Responsive Design */
+@media (max-width: 768px) {
+    .quran-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .arabic-text {
+        text-align: center;
+    }
+}
+
+/* Footer styles */
+footer {
+    padding: 30px 20px;
+    text-align: center;
+    color: var(--text-dark);
     font-weight: bold;
+    background: linear-gradient(135deg, var(--light-orange) 0%, white 100%);
+    margin-top: 50px;
 }
 
 .footer-links {
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 .footer-links a {
-    color: black;
+    color: var(--primary-orange);
     text-decoration: none;
-    margin: 0 10px;
+    margin: 0 15px;
+    transition: color 0.3s ease;
 }
 
 .footer-links a:hover {
+    color: var(--soft-red);
     text-decoration: underline;
-}
-
-.logo span {
-    margin-left: 10px;
 }
 
